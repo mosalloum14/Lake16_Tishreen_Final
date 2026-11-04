@@ -6,9 +6,10 @@ A compact Python analysis comparing thesis-reported surface-water areas for Lake
 
 ## Research question
 
-Does a threshold-based Landsat NDWI series reproduce the September water-area decline reported in the MSc thesis?
+Does a threshold-based Landsat NDWI series reproduce the September water-area decline reported in the master’s thesis?
 
-September is retained because the thesis selected it to represent conditions after summer and the dry season (§2.2.4). This keeps the seasonal window consistent while testing a different mapping workflow.
+September was selected because the thesis selected it to represent conditions after summer and the dry season (§2.2.4). This keeps the seasonal window consistent while testing a different mapping workflow.
+
 
 ## Data and methods
 
@@ -27,9 +28,9 @@ The notebook calculates paired percentage differences, OLS slopes and 95% confid
 | Thesis classification | 11 | −0.125 | 0.0049 | 0.0165 |
 | GEE Landsat NDWI > 0.15 | 11 | −0.008 | 0.7116 | 0.7612 |
 
-NDWI estimates average 11.8% below the thesis values. The mean difference is −19.2% in 2002–2007 and −5.5% in 2012–2020.
+Estimates of the Normalized Difference Water Index (NDWI) show an average decrease of 11.8% compared to the values presented in the thesis. The mean difference is -19.2% for the 2002–2007 period and -5.5% for the 2012–2020 period.
 
-These results show that the estimated trend depends on the data and mapping procedure. They do not establish which method is more accurate, validate either series independently, or attribute changes to climate or dam operation.
+These results indicate that the estimated trend depends on the data and the mapping procedures used. They do not clarify which of the two methods is more accurate, nor do they provide an independent validation for either dataset; furthermore, they do not attribute the observed changes to climate factors or the operation of dams.
 
 ## Run
 
@@ -43,7 +44,8 @@ Install the listed packages and run the notebook in Jupyter with: python -m pip 
 
 ## Scope and reproducibility
 
-This repository reproduces the statistical comparison from the saved area estimates. It does not reprocess raw satellite imagery. The original hand-drawn ROI geometry was not included in the archived export, so the exact raster-area extraction cannot be independently rerun from this repository. Trend p-values are exploratory and do not adjust for serial dependence.
+This repository reproduces the statistical comparison based on stored area estimates. It does not reprocess raw satellite imagery. The original hand-drawn ROI geometry was not included in the archived export, so the exact raster-area extraction cannot be independently rerun from this repository. Trend p-values are exploratory and do not adjust for serial dependence.
+
 
 ## References
 
